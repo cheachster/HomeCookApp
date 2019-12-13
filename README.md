@@ -13,6 +13,7 @@ Linda Di Federico
 - 'Prompt' by Google Fonts
 - Icons by Font Awesome
 - API
+- Image from www.images.unsplash.com
 - Favicon from www.freefavicon.com
 - W3Schools password security verification
 
