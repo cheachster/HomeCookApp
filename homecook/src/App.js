@@ -1,12 +1,20 @@
 import React from 'react';
-import Login from './components/login'
 import './App.css';
+import SignInSide from './components/Pages/SignIn'
+import {Route, BrowserRouter as Router} from 'react-router-dom'
+import UserPage from './components/Pages/UserPage'
 
 function App() {
   return (
-    <div className="App">
-        <Login/>
-    </div>
+    <Router>
+      <div>
+       
+        <Route exact path= {[ "/", "signin"]} component={SignInSide} />
+        <Route exact path="/User" component={UserPage} />
+        
+        
+      </div>
+    </Router>
   );
 }
 

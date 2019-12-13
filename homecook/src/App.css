@@ -1,8 +1,4 @@
-.App {
-  text-align: center;
-  margin-top: 40vh; 
-}
-
-.App-link {
-  color: #09d3ac;
+*{
+  margin: 0;
+  padding: 0;
 }
