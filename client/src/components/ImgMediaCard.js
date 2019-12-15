@@ -5,8 +5,10 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const useStyles = makeStyles({
   card: {
@@ -52,11 +54,11 @@ export default function ImgMediaCard(props) {
       </CardActionArea>
       <CardActions>
         <button  type='button' size="small" color="primary" onClick={recipeOpen} >
-          Share
-        </button>
-        <Button size="small" color="primary">
           Learn More
-        </Button>
+        </button>
+        <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
       </CardActions>
     </Card>
   );

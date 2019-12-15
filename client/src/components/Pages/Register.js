@@ -70,9 +70,10 @@ export default function RegistrationSide() {
     e.preventDefault();
     console.log(`login Id:`,loginRef.current.value,passwordRef.current.value)
   
-    let result = axios.get('/api/register', {
+    let result = await axios.get('/api/register', {
       email:loginRef.current.value, password: passwordRef.current.value
     });
+    console.log(result.data.status);
     if(result.data.status && result.data.status=="1" ) {
       localStorage.userID = result.data.userID;
       window.location.href = '/user';
